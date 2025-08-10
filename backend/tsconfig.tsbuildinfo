@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/wsserver.ts","./src/config/redisconnectivity.ts","./src/controller/chatlogic.ts","./src/controller/roomlogic.ts","./src/router/routes.ts"],"version":"5.8.3"}

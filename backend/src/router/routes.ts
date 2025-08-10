@@ -1,0 +1,13 @@
+import { createRoomLogic } from "../controller/roomLogic";
+import { checkRoomExist } from "../controller/roomLogic";
+import { allRoomsId, joinRoom, getAllParticipants, leaveRoom, deleteRoom } from "../controller/roomLogic";
+import express from 'express';
+const router = express.Router();
+router.post("/createroom", createRoomLogic);
+router.get("/roomexist/:roomId", checkRoomExist);
+router.get("/allroomid", allRoomsId);
+router.post('/joinroom/:roomId', joinRoom);
+router.get('/participants/:roomId', getAllParticipants);
+router.post('/leaveroom/:roomId', leaveRoom);
+router.delete('/deleteroom/:roomId', deleteRoom);
+export default router;
